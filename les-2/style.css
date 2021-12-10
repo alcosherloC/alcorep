@@ -1,0 +1,71 @@
+body{
+	background-color: #ffffff;
+}
+.wrapper{
+	width: 60%;
+	margin: 0 auto;
+}
+.lesson{
+	font-size: 24px;
+	margin: 20px 0 20px 0;
+}
+.container{
+	height: 80vh;
+}
+.task{
+	margin-bottom: 40px;
+}
+.task_title{
+	font-size: 22px;
+	border-bottom: 2px solid #000;
+	margin: 0 0 20px 0;
+}
+
+.d_grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+.grid_item{
+	border-radius: 10px;
+	background-color: #8d6dc2;
+	padding: 10px;
+	color: #fff;
+}
+
+
+.container2{
+	height: 50vh;
+}
+
+.d_grid2{
+	display: grid;
+	background-color: #d0d0d0;
+	grid-template-columns: 30% 10% 50%;
+	grid-template-rows: 50%;
+	grid-gap: 10px;
+}
+
+
+.container3{
+	height: 300px;
+}
+
+.d_grid3{
+	display: grid;
+	background-color: #d0d0d0;
+	grid-template-rows: 50px 1fr 50px;
+	grid-gap: 10px;
+}
+
+
+
+
+
+.d_grid4{
+	display: grid;
+	background-color: #aaaaaa;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 10px;
+}
