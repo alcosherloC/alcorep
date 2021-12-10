@@ -58,11 +58,6 @@ body{
 	grid-template-rows: 50px 1fr 50px;
 	grid-gap: 10px;
 }
-
-
-
-
-
 .d_grid4{
 	display: grid;
 	background-color: #aaaaaa;
