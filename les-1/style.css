@@ -1,0 +1,21 @@
+body{
+	background-color: #ffffff;
+}
+.wrapper{
+	width: 60%;
+	margin: 0 auto;
+}
+.lesson{
+	font-size: 24px;
+	margin: 20px 0 20px 0;
+}
+.d_grid{
+	display: inline-grid;
+	grid-template-columns: 300px 150px 300px 100px;
+	grid-template-rows: 100px 200px 300px;
+	grid-gap: 10px;
+}
+.block{
+	border-radius: 10px;
+	background-color: #8d6dc2;
+}
