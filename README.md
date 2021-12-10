@@ -1,2 +1,0 @@
-# alcorep
-homework
