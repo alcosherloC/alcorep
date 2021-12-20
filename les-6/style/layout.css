@@ -1,0 +1,54 @@
+.d-grid{
+    display: grid;
+}
+
+.position-absolute{
+    grid-template: repeat(3, 100px)/repeat(3, 100px);
+    position: relative;
+}
+
+.position-absolute
+div:nth-child(1){
+    position: absolute;
+    left: 0;
+    right: 0;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.opacity{
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    position: relative;
+}
+.t1{
+   opacity: 50%; 
+}
+.opacity
+div:nth-child(1){
+    position: absolute;
+    opacity: 100%;
+    z-index: 1;
+    top: 10px;
+}
+
+.order{
+    grid-template: 1fr 1fr/1fr 1fr;
+}
+
+
+.order
+div:nth-child(1){
+    order: 1;
+}
+.order
+div:nth-child(2){
+    order: 2;
+}
+.order
+div:nth-child(3){
+    order: 3;
+}
+.order
+div:nth-child(4){
+    order: 0;
+}
