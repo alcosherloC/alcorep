@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #666666;
+}
+
+.container{
+    max-width: 1195px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+
+header{
+    background: #353535;
+    padding: 55px 0;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+header .menu a{
+    width: 260px;
+    background: #db4163;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    color: #fefcfc;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+header .menu a:hover{
+    box-shadow: none;
+    opacity: 0.4;
+}
+
+main{
+    margin: 55px 0;
+}
+.technology{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.technology img{
+    width: 360px;
+    height: 200px;
+}
+.technology .arrow{
+    width: 41px;
+    height: 22px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    width: 270px;
+    height: 200px;
+    margin-bottom: 35px;
+}
+.gallery img:nth-child(2){
+    width: 540px;
+    height: auto;
+    min-height: 200px;
+}
+.gallery img:nth-child(5){
+    width: 540px;
+    height: auto;
+    min-height: 200px;
+}
+.news article{
+    background-color: #fefcfc;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.news article img{
+    width: 340px;
+    height: 225px;
+    margin-right: 55px;
+}
+.news article .description{
+    font-size: 16px;
+    width: 760px;
+}
+.news article:nth-child(even) img{
+    order: 1;
+    margin-right: 0;
+    margin-left: 55px;
+}
+
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cards .card{
+    width: 400px;
+    min-height: 420px;
+    background-color: #2b2b2b;
+    color: #fff;
+    box-shadow: 0 0 10px -1px #000;
+    font-size: 18.5px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 20px 0;
+}
+.card h3{
+    margin: 0 0;
+    background-color: rgb(212, 68, 97);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0 20px;
+}
+.card .description{
+    padding: 40px;
+}
+.card .description p{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.card .btn{
+    background-color: crimson;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 0;
+    display: block;
+    margin: auto auto 0;
+    border: none;
+    width: 260px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px -1px #000;
+}
+
+footer{
+    background-color:#353535;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px){
+    .technology{
+        flex-direction: column;
+    }
+    .technology img{
+        max-width: 620px;
+        max-height: 315px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .technology .arrow{
+        display: none;
+    }
+    .gallery img{
+        flex-grow: 1;
+        height: auto;
+    }
+    .news article img{
+        flex-shrink: 1;
+    }
+    .news article .description{
+        flex-shrink: 2;
+        width: 100%;
+    }
+}
+@media (max-width: 991px){
+    .cards .card{
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 768px){
+    header .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu a{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    header .menu{
+        padding-top: 30px;
+    }
+
+    .news article{
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        margin: 70px 24px;
+    }
+    .news article img{
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin-right: 0;
+    }
+    .news article .description{
+        
+    }
+    .news article:nth-child(even) img{
+        order: 0;
+        margin-left: 0;
+    }
+
+    .cards .card{
+        font-size: 29px;
+        width: 100%;
+        max-width: 625px;
+        min-height: 665px;
+    }
+    .card .btn{
+        font-size: 29px;
+        padding: 16px 0;
+        width: 315px;
+    }
+
+    footer{
+        padding: 55px 0;
+    }
+}
+
+
+.three_block{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.three_block div{
+    min-width: 300px;
+    height: 200px;
+    background-color: coral;
+    margin: 0 20px 20px 0px
+}
+
+.even_block{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.even_block div{
+    background-color:rgb(34, 149, 178);
+    width: 250px;
+    height: 250px;
+    margin: 0 15px 15px 0;
+}
+.even_block div:nth-child(even){
+    width: 750px;
+    height: 750px;
+}
+
+@media (max-width: 768px){
+    .even_block div:nth-child(even){
+        width: 250px;
+        height: 250px;
+    }
+}
