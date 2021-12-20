@@ -1,0 +1,21 @@
+.d-grid{
+    display: grid;
+}
+
+.auto_flow{
+    grid-template: repeat(3, 100px)/repeat(2, 1fr);
+    grid-auto-flow: column;
+}
+
+.auto_fit{
+    grid-template-columns: repeat(auto-fit, 100px);
+
+}
+
+.auto_fill{
+    grid-template-columns: repeat(auto-fill, 200px);
+}
+
+.auto_fit_minmax{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
