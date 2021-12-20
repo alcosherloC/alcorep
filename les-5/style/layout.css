@@ -1,0 +1,31 @@
+.d-grid{
+    display: grid;
+}
+.align-self-item{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+
+}
+.align-self-item div:nth-child(even){
+    align-self: center;
+}
+
+.place-content-grid{
+    height: 400px;
+    grid-template: 100px 100px 100px/ 100px 100px;
+    place-content: center center;
+}
+
+.place-content-grid
+div:nth-child(even){
+    place-self: center center;
+}
+
+
+.four{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+}
+.four
+div:first-child, :last-child{
+    align-self: center;
+    justify-self: center;
+}
