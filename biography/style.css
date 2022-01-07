@@ -1,0 +1,40 @@
+body{
+
+    background-color: #ffb8d6;
+     font-family: "Calibri", sans-serif;
+}
+.wrapper{
+    border-radius: 15px;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #fffad1;
+}
+.logo{
+    padding: 30px;
+    padding-left: 100px;
+}
+h1{
+    color: #ffc0a1f8;
+    font-size: 26px;
+}
+.info{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    
+    
+
+}
+.text-block{
+    width: 420px;
+    font-size: 18px;
+    color: #d56f3cf8;
+}
+img{
+    width: 150px;
+    height: 370px;
+    border-radius: 10px;
+   
+}
